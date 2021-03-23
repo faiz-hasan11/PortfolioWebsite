@@ -1,0 +1,45 @@
+.button{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #ff1919;
+  border: 2px solid #ff1919;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  margin-right: 30px;
+  background: transparent;
+}
+
+.button span{
+  position: relative;
+  z-index: 2;
+  background: transparent;
+}
+
+.button:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff1919;
+  transition: all .35s;
+}
+
+.button:hover{
+  color: #fff;
+}
+
+.button:hover:after{
+  width: 100%;
+}
+
+
+
